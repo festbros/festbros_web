@@ -1,0 +1,55 @@
+
+    <section>
+        <div id="csi-contact" class="csi-contact csi-sponsors">
+       
+           <div class="csi-inner-bg"> <div class="csi-inner">
+                <div class="container">
+                <div class="row">
+                            <div class="col-xs-12">
+                                <div class="csi-heading">
+                                    <h2 class="heading">Contact Us</h2>
+                                    <h3 class="subheading">If you have any questions, we will be happy to answer them..</h3>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="row">
+                        <div class="col-sm-offset-2 col-sm-8">
+                            <form   class="csi-contactform" >
+                                <input type="hidden" name="authenticity_token" id="authenticity_token" value="<%=form_authenticity_token%>">
+
+                                <div class="form-group">
+                                    <input type="text" name="csiname" class="form-control csiname" id="csiname" placeholder="Enter Your Name ..." required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="csiemail" class="form-control csiemail" id="csiemail" placeholder="Enter Email address ..." required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="csisubject" class="form-control csisubject" id="csisubject" placeholder="Enter Email Subject ..." required>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control csimessage" name="csimessage" id="csimessage" rows="5" placeholder="Leave me A Massage ..." required></textarea>
+                                </div>
+                                <button type="submit" name="submit" value="contact-form" class="csi-btn hvr-glow hvr-radial-out csisend csi-send">Send Massage</button>
+                            </form>
+                            <!-- MODAL SECTION -->
+                            <div id="csi-form-modal" class="modal fade in csi-form-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content csi-modal-content">
+                                        <div class="modal-header csi-modal-header">
+                                            <button type="button" class="close brand-color-hover" data-dismiss="modal" aria-label="Close">
+                                                <i class="fa fa-power-off"></i>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="alert csi-form-msg" role="alert"></div>
+                                        </div> <!--//MODAL BODY-->
+                                    </div>
+                                </div>
+                            </div> <!-- //MODAL -->
+                        </div> <!--//.COL-->
+                    </div>
+                </div><!-- //.CONTAINER -->
+            </div><!-- //.INNER -->
+        </div>  
+        </div>
+    </section>

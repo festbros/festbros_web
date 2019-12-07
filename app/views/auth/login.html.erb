@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<!-- begin::Head -->
+	<head>
+		<meta charset="utf-8" />
+		<title>Login</title>
+		<meta name="description" content="Latest updates and statistic charts">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+
+		<!--begin::Web font -->
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+		<script>
+			WebFont.load({
+            google: {"families":["Poppins:300,400,500,600,700","Roboto:300,400,500,600,700"]},
+            active: function() {
+                sessionStorage.fonts = true;
+            }
+          });
+        </script>
+
+		<!--end::Web font -->
+
+		 
+        <%= stylesheet_link_tag 'perfect-scrollbar' %>
+         <%= stylesheet_link_tag "style.bundle" %>
+         <%= favicon_link_tag asset_path('festbros.png') %>
+		 
+	</head>
+
+	<!-- end::Head -->
+
+	<!-- begin::Body -->
+	<body class="m--skin- m-header--fixed m-header--fixed-mobile m-aside-left--enabled m-aside-left--skin-dark m-aside-left--fixed m-aside-left--offcanvas m-footer--push m-aside--offcanvas-default">
+
+		<!-- begin:: Page -->
+		<div class="m-grid m-grid--hor m-grid--root m-page">
+            <div class="m-grid__item m-grid__item--fluid m-grid m-grid--hor m-login m-login--signin m-login--2 m-login-2--skin-1" id="m_login" 
+            style="background-image: url('/assets/bg-1-0107592f7ea78f5b5d0eb14eaedf9d734442d014cb0ce708da8058d1085b2d9d.jpg');">
+            
+				<div class="m-grid__item m-grid__item--fluid m-login__wrapper">
+					<div class="m-login__container">
+						<div class="m-login__logo">
+							<a href="#"><%= image_tag 'logo-1.png' %>
+							 
+							</a>
+						</div>
+						<div class="m-login__signin">
+							<div class="m-login__head">
+								<h3 class="m-login__title">Sign In To Admin</h3>
+						
+							</div>
+							<form class="m-login__form m-form" action="/sessions/" method="POST">
+							<input type="hidden" name="authenticity_token" id="authenticity_token"   value="<%=form_authenticity_token%>">
+								<div class="errors">
+									<% if flash[:login_errors] %>
+									  	<% flash[:login_errors].each do |error| %>
+									  		<p style="color:red;FONT-SIZE: medium;font-weight: 400;padding-left: 94px;"> <%= error %> </p>
+									<% end %>
+									<% end %>
+								</div>
+								<div class="form-group m-form__group">
+									<input class="form-control m-input" type="text" placeholder="Username" name="login[username]" autocomplete="off">
+								</div>
+								<div class="form-group m-form__group">
+									<input class="form-control m-input m-login__form-input--last" type="password" placeholder="Password" name="login[password]">
+								</div>
+								
+								<div class="m-login__form-action">
+								<input type="submit" name="submit" value="Sign in" class="btn btn-focus m-btn m-btn--pill m-btn--custom m-btn--air  m-login__btn m-login__btn--primary">
+								</div>
+							</form>
+						</div>
+					 
+						 
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- end:: Page -->
+
+        <!--begin:: Global Mandatory Vendors -->
+        <%= javascript_include_tag 'jquery', 'data-turbolinks-track': 'reload' %>
+        <%= javascript_include_tag 'popper', 'data-turbolinks-track': 'reload' %>
+        <%= javascript_include_tag 'bootstrap.min', 'data-turbolinks-track': 'reload' %>
+        <%= javascript_include_tag 'js.cookie', 'data-turbolinks-track': 'reload' %>
+        <%= javascript_include_tag 'moment.min', 'data-turbolinks-track': 'reload' %>
+        <%= javascript_include_tag 'tooltip.min', 'data-turbolinks-track': 'reload' %>
+        <%= javascript_include_tag 'perfect-scrollbar', 'data-turbolinks-track': 'reload' %>
+        <%= javascript_include_tag 'wNumb', 'data-turbolinks-track': 'reload' %>
+        
+		<!--end:: Global Mandatory Vendors -->
+
+	 
+		<!--begin::Global Theme Bundle -->
+		 
+        <%= javascript_include_tag 'scripts.bundle', 'data-turbolinks-track': 'reload' %>
+
+		<!--end::Global Theme Bundle -->
+
+		<!--begin::Page Scripts -->
+        <%= javascript_include_tag 'login', 'data-turbolinks-track': 'reload' %>
+
+		<!--end::Page Scripts -->
+	</body>
+
+	<!-- end::Body -->
+</html>

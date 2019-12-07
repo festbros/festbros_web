@@ -1,0 +1,69 @@
+ <footer>
+        <div id="csi-footer" class="csi-footer">
+            <div class="csi-inner-bg">
+                <div class="csi-inner">
+                    <div class="csi-footer-middle">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4">
+                                    <div class="csi-footer-logo">
+                                        <a class="logo" href="#">
+                                        <%= image_tag "logo_footer.png"%>
+                                       
+                                        </a>
+
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-8">
+                                    <div class="csi-footer-single-area">
+                                        <div class="csi-footer-single">
+                                            <h3 class="footer-title">Venue Location </h3>
+                                            <h4 class="date">
+                                                12th - 14th December, 2019
+                                            </h4>
+                                            <address>
+                                                Riyadh Front <br>
+                                                Saudi Arabia
+                                            </address>
+                                            <a class="map-link" href="#csi-map"><i class="fa fa-map-marker" aria-hidden="true"></i> View Map location</a>
+                                        </div>
+                                        <div class="csi-footer-single">
+                                            <h3 class="footer-title">Social Connection</h3>
+                                            <p class="text">
+                                                You should connect social area <br> for Any update
+                                            </p>
+                                            <ul class="list-inline csi-social">
+                                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="csi-subscriber">
+                                        <h3 class="footer-title">Subscribe & Stay Updated</h3>
+                                        <form class="subscribe-form csi-subscribe-form" >
+                                            <div class="form-group form-group-email">
+                                                <input type="email" id="email" placeholder="Ex: youremail@gmail.com" class="form-control csi-input-form form-control"  />
+                                            </div>
+						                	<input type="hidden" name="authenticity_token" id="authenticity_token" value="<%=form_authenticity_token%>">
+                                            <div class="form-group form-group-submit">
+                                                <button type="submit" name="csi-submit" id="csi-submit" class="csi-btn csi-submit"><span>Subscribe</span></button>
+                                            </div>
+                                        </form>
+                                    </div> <!--//.SUBSCRIBE-->
+                                    <div class="csi-copyright">
+                                        <%# <p class="text">© 2015 Eventpro is proudly powered by <a href="#http://www.httpcoder.com/">httpcodar.com</a></p> %>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //.CONTAINER -->
+                    </div>
+                </div>
+            </div>
+            <!-- //.footer Middle -->
+        </div>
+    </footer>

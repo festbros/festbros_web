@@ -1,0 +1,196 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+   
+
+    <!-- SITE TITLE -->
+    <title>FestBros </title>
+    <meta name="description" content="FestBros is a premiere events company specialized in delivering premium events management solutions at global standards" />
+    <meta name="keywords" content="FestBros events company specisalized delivering premium events management solutions global standards  FestBros leverages its global strategic partnerships provide world-class entertainment experiences imagination. From heart-pounding world eSports tournaments bass-driven excitement music festivals  well-positioned deliver creative, engaging events experiences standard dream plan Events Consultation Management Coordination" />
+    <meta name="author" content="FestBros " />
+
+    <!-- twitter card starts from here, if you don't need remove this section -->
+    <meta name="twitter:card" content="" />
+    <meta name="twitter:site" content="FestBros " />
+    <meta name="twitter:creator" content="@FestBros" />
+    <meta name="twitter:url" content="http://FestBros.com/" />
+    <meta name="twitter:title" content="Events" /> 
+    <meta name="twitter:description" content="FestBros is a premiere events company specialized in delivering premium events management solutions at global standards " /> <!-- maximum 140 char -->
+    <meta name="twitter:image" content="" />  <!-- when you post this page url in twitter , this image will be shown -->
+    <!-- twitter card ends from here -->
+
+    <!-- facebook open graph starts from here, if you don't need then delete open graph related  -->
+    <meta property="og:title" content="Festbros" />
+    <meta property="og:url" content="http://Festbros.com" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Festbros" />
+    <!--meta property="fb:admins" content="" /-->  <!-- use this if you have  -->
+    <meta property="og:type" content="http://Festbros.com" />
+    <meta property="og:image" content="assets/img/opengraph/fbphoto.jpg" /> <!-- when you post this page url in facebook , this image will be shown -->
+    <!-- facebook open graph ends from here -->
+
+    <!--  FAVICON AND TOUCH ICONS -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico" />  <!-- this icon shows in browser toolbar -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" /> <!-- this icon shows in browser toolbar -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+    <%# <link rel="manifest" href="assets/img/favicon/manifest.json"> %>
+  <%= favicon_link_tag asset_path('festbros.png') %>
+ 
+    <!-- BOOTSTRAP CSS -->
+   <%= stylesheet_link_tag "css/bootstrap.min" %>
+    <!-- FONT AWESOME -->
+ <%= stylesheet_link_tag "css/font-awesome.min" %>
+    <!-- GOOGLE FONT -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700%7cLato:300,400,700"/>
+    <!-- OWL CAROUSEL CSS -->
+     <%= stylesheet_link_tag "owl.carousel.min" %>
+      <%= stylesheet_link_tag "owl.theme.default.min" %>
+    <!-- POPUP-->
+      <%= stylesheet_link_tag "magnific-popup" %>
+    <!-- MASTER  STYLESHEET  -->
+    <%= stylesheet_link_tag "style-default.min" %>
+    <!-- MODERNIZER CSS  -->
+    <%= javascript_include_tag "modernizr.min" %>
+</head>
+<body class="home">
+
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div class="csi-container ">
+    <!-- ***  ADD YOUR SITE CONTENT HERE *** -->
+    <!--HEADER-->
+         <%= render   "header" %>
+    <!--HEADER END-->
+ 
+    <!--Banner-->
+         <%# <%= render partial: "banner" , lunchdate: @lunchdate %>
+    <!--Banner END-->
+ 
+   <!--SLIDER-->
+     <%= render partial: "slider" , lunchdate: @lunchdate %>
+   <!--SLIDER END-->
+
+ <!--countdown-->
+     <%= render partial: "countdown" , lunchdate: @lunchdate %>
+   <!--countdown END-->
+
+
+    <!--ABOUT-->
+     <%= render partial: "about" %>
+    <!--ABOUT END-->
+ 
+    <!--SERVICE-->
+     <%= render partial: "services" %>
+    <!--SERVICE END-->
+    
+ 
+    <!--SPEAKERS-->
+     <%# <%= render partial: "speakers" %>  
+    <!--SPEAKERS END-->
+ 
+    <!--SCHEDULE change days-->
+     <%= render partial: "schedule" %>
+    <!--SCHEDULE END-->
+ 
+    <!--SPONSORED -> gold only-->
+     <%# <%= render partial: "sponsers" %> 
+    <!--SPONSORED END-->
+ 
+    <!--REGISTRATION contact us--> 
+     <%# <%= render partial: "registration" %>  
+    <!--REGISTRATION END-->
+
+     <!--  Contact us--> 
+      <%= render partial: "contact" %>  
+    <!--Contact us END-->
+    
+
+    <!--News-->
+     <%# <%= render partial: "news" %>  
+    <!--News END-->
+
+    <!--VIDEO replaced with map-->
+     <%# <%= render partial: "video" %>  
+      <!--//.VIDEO END-->
+         <!--MAP-->
+    <section>
+        <div id="csi-map" class="csi-map">
+            <div class="innerpage-section">
+                <div class="csimapcanvas map-canvas-default" id="map_canvas"> 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14482.031803197671!2d46.72691297140028!3d24.84649537716505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2efbf5ff605bad%3A0x1e61a8549cf8bcb4!2sRiyadh%20Front!5e0!3m2!1sen!2s!4v1574179695492!5m2!1sen!2s"
+                 width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//.MAP END-->
+     <%# <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7241.019693162831!2d46.73002312142274!3d24.84643058624183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2efbf5ff605bad%3A0x1e61a8549cf8bcb4!2sRiyadh%20Front!5e0!3m2!1sen!2s!4v1574178380397!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe> %>
+   
+
+    <!--FOOTER-->
+     <%= render partial: "footer" %>
+    <!--FOOTER END-->
+
+
+</div> <!--//.csi SITE CONTAINER-->
+<!-- *** ADD YOUR SITE SCRIPT HERE *** -->
+<!-- JQUERY  -->
+<%= javascript_include_tag "jquery-1.12.4.min" %>
+ 
+<!-- BOOTSTRAP JS  -->
+<%= javascript_include_tag "bootstrap.min" %>
+ 
+
+<!-- SKILLS SCRIPT  -->
+<%= javascript_include_tag "jquery.validate" %>
+ 
+<!-- if load google maps then load this api, change api key as it may expire for limit cross as this is provided with any theme -->
+<%# <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZV3Ir9rWE7_UsrmSLXZu4GiCqOkdpMR8"></script> %>
+
+<!-- CUSTOM GOOGLE MAP -->
+<%= javascript_include_tag "jquery.googlemap" %>
+ 
+<!-- Owl Carousel  -->
+<%= javascript_include_tag "owl.carousel.min" %>
+ 
+<!-- type js -->
+ <%= javascript_include_tag "typed.min" %>
+ 
+<!-- COUNTDOWN   -->
+ <%= javascript_include_tag "countdown" %>
+ 
+<!-- SMOTH SCROLL -->
+ <%= javascript_include_tag "jquery.smooth-scroll.min" %>
+ <%= javascript_include_tag "jquery.easing.min" %>
+
+<!-- adding magnific popup js library -->
+ <%= javascript_include_tag "jquery.magnific-popup.min" %>
+
+<!-- SMOTH SCROLL -->
+ <%= javascript_include_tag "jquery.smooth-scroll.min" %>
+ <%= javascript_include_tag "jquery.easing.min" %>
+ 
+<!-- CUSTOM SCRIPT  -->
+ <%= javascript_include_tag "custom.script" %>
+ 
+</body>
+ 
+</html>
