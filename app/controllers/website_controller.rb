@@ -1,7 +1,7 @@
 class WebsiteController < ApplicationController
    
     def index
-        @lunchdate = '2019/12/12'
+        @lunchdate = '2019/12/12 17:30:00'
         render layout: false
     end
 
